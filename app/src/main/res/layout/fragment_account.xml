@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:paddingHorizontal="25dp"
     android:paddingVertical="25dp"
@@ -15,4 +16,17 @@
         android:text="Account"
         android:textColor="@color/black"
         android:textSize="24dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="@font/opensansbold"
+        android:gravity="end"
+        android:paddingVertical="20dp"
+        android:text="Sign out"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        app:rippleColor="@color/colorPrimary" />
 </FrameLayout>
