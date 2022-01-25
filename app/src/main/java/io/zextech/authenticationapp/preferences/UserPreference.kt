@@ -8,11 +8,10 @@ import io.zextech.authenticationapp.model.User
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
+val Context.dataStore by preferencesDataStore("TourGO")
 class UserPreference(
     var context: Context
 ) {
-    private val Context.dataStore by preferencesDataStore("TourGO")
-
     companion object {
         var TOKEN = stringPreferencesKey("token")
         val NAME = stringPreferencesKey("name")
@@ -25,11 +24,11 @@ class UserPreference(
             it[TOKEN]
         }
 
-    suspend fun getUserfromDataStore() = context.dataStore.data.map {
+    fun getUserfromDataStore() = context.dataStore.data.map {
         User(
-            it[NAME] ?: "",
-            it[EMAIL] ?: "",
-            it[PASSWORD] ?: ""
+            it[NAME] ?: "Test",
+            it[EMAIL] ?: "test@gmail.com",
+            it[PASSWORD] ?: "1234"
         )
     }
 

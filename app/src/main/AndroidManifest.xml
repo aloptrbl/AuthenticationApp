@@ -10,7 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AuthenticationApp">
         <activity
-            android:name=".views.activities.HomeActivity"
+            android:name=".views.activities.PageActivity"
+            android:exported="false"
+            android:theme="@style/PageTheme" />
+        <activity
+            android:name=".views.fragments.HomeFragment"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity

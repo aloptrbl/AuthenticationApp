@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+    <fragment
+        android:id="@+id/home"
+        android:name="io.zextech.authenticationapp.views.fragments.HomeFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/activity_home">
+        <!--        <action-->
+        <!--            android:id="@+id/action_signin_to_signup"-->
+        <!--            app:destination="@id/signup" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="io.zextech.authenticationapp.views.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat"></fragment>
+    <fragment
+        android:id="@+id/favorite"
+        android:name="io.zextech.authenticationapp.views.fragments.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite"></fragment>
+    <fragment
+        android:id="@+id/account"
+        android:name="io.zextech.authenticationapp.views.fragments.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account"></fragment>
+</navigation>
