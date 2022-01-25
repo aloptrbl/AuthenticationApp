@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckstyleConfigurable">
+    <option name="suppFilterFilename" value="" />
+    <option name="suppCommentFilter" value="false" />
+    <option name="offComment" value="CHECKSTYLE\:OFF" />
+    <option name="onComment" value="CHECKSTYLE\:ON" />
+    <option name="checkFormat" value=".*" />
+    <option name="messageFormat" value="" />
+    <option name="checkCPP" value="true" />
+    <option name="checkC" value="true" />
+    <option name="suppNearbyCommentFilter" value="false" />
+    <option name="snCommentFormat" value="SUPPRESS CHECKSTYLE (\w+)" />
+    <option name="snCheckFormat" value="$1" />
+    <option name="snMessageFormat" value="" />
+    <option name="snInfluenceFormat" value="0" />
+    <option name="snCheckCPP" value="true" />
+    <option name="snCheckC" value="true" />
+    <option name="pathToUserRulesConfiguration" value="" />
+    <option name="pathToJarWithRules" value="" />
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable-v24/splash_fg.xml" value="0.23425925925925925" />
+        <entry key="app/src/main/res/drawable/background_corner_top.xml" value="0.14375" />
+        <entry key="app/src/main/res/drawable/bg_gradient.xml" value="0.14375" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.14375" />
+        <entry key="app/src/main/res/drawable/splash_background.xml" value="0.14375" />
+        <entry key="app/src/main/res/layout/activity_auth.xml" value="0.12760416666666666" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.41975308641975306" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12183383991894631" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.15682291677891516" />
+        <entry key="app/src/main/res/layout/bg_gradient.xml" value="0.23645833333333333" />
+        <entry key="app/src/main/res/layout/fragment_sign_in.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/fragment_sign_up.xml" value="0.12760416666666666" />
+        <entry key="app/src/main/res/layout/splash_background.xml" value="0.23645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="FindBugsConfigurable">
+    <option name="make" value="true" />
+    <option name="effort" value="default" />
+    <option name="priority" value="Medium" />
+    <option name="excludeFilter" value="" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>
