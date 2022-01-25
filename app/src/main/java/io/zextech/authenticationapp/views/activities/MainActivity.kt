@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.asLiveData
 import io.zextech.authenticationapp.R
 import io.zextech.authenticationapp.preferences.UserPreference
-import io.zextech.authenticationapp.views.fragments.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         val userPreferences = UserPreference(this)
 
         userPreferences.authtoken.asLiveData().observe(this, {
-            val activity = if (it == null) AuthActivity::class.java else HomeFragment::class.java
+            val activity = if (it == null) AuthActivity::class.java else PageActivity::class.java
             var intent = Intent(this, activity)
             intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
