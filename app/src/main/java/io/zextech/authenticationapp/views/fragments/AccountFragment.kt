@@ -1,11 +1,18 @@
 package io.zextech.authenticationapp.views.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.datastore.preferences.core.edit
 import androidx.fragment.app.Fragment
 import io.zextech.authenticationapp.R
+import io.zextech.authenticationapp.preferences.UserPreference
+import io.zextech.authenticationapp.preferences.dataStore
+import io.zextech.authenticationapp.views.activities.AuthActivity
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,6 +34,23 @@ class AccountFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+        }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        var signout_btn =
+            view.findViewById<com.google.android.material.button.MaterialButton>(R.id.signout_btn)
+        signout_btn.setOnClickListener {
+            GlobalScope.launch {
+                context?.dataStore?.edit {
+                    it[UserPreference.TOKEN] = ""
+                }
+            }
+            val activity = AuthActivity::class.java
+            var intent = Intent(view.context, activity)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
         }
     }
 

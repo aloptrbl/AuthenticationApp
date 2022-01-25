@@ -22,11 +22,13 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:fontFamily="@font/opensansbold"
-        android:gravity="end"
+        android:id="@+id/signout_btn"
+        android:layout_marginBottom="35dp"
         android:paddingVertical="20dp"
         android:text="Sign out"
         android:textColor="@color/white"
         android:textSize="16dp"
+        android:gravity="center"
         app:backgroundTint="@color/colorPrimaryDark"
         app:rippleColor="@color/colorPrimary" />
 </FrameLayout>
